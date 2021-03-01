@@ -66,9 +66,12 @@ cvmfs:
       enabled: false
 
 galaxy:
+  cvmfs:
+    enabled: true
+    deploy: false
   image:
     repository: galaxy/galaxy-anvil
-    tag: 20.09
+    tag: 21.01
   persistence:
     accessMode: "ReadWriteMany"
     storageClass: "nfs"
