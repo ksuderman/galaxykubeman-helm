@@ -108,6 +108,9 @@ galaxy:
     galaxy.yml:
       galaxy:
         job_config_file: "/galaxy/server/config/job_conf.yml"
+        logo_src: "{{ .Values.ingress.path}}/static/images/galaxy_project_logo_white_square.png"
+        logo_src_secondary: "{{ .Values.ingress.path}}/static/images/galaxy_project_logo_white_square.png"
+        logo_url: "https://anvil.terra.bio"
     job_conf.yml:
       runners:
         local:
