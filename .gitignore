@@ -93,3 +93,6 @@ ENV/
 *.swo
 
 galaxykubeman/charts/
+
+# IDEs
+.idea
