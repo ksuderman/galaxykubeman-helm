@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-PREFIX=keith-testing-2101
+PREFIX=keith-rel-test
 helm install -n $PREFIX $PREFIX-dev . \
-    --set galaxy.image.tag=21.01 \
+#    --set galaxy.image.tag=21.01 \
     --set galaxy.terra.launch.workspace="De novo transcriptome reconstruction with RNA-Seq"\
     --set galaxy.terra.launch.namespace="galaxy-anvil"\
     --set cvmfs.cache.preload.enabled=false\

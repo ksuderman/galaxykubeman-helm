@@ -83,6 +83,10 @@ function namespace() {
 	kubectl create ns $PREFIX
 }
 
+    #--set galaxy.image.repository=$IMAGE \
+    #--set galaxy.image.tag=$TAG \
+    #--set galaxy.image.repository=galaxy/galaxy-min
+
 function _helm() {
   local NAME="$PREFIX-galaxy"
 	echo "Helm installing $NAME into namespace $PREFIX"
@@ -98,8 +102,6 @@ function _helm() {
     --set galaxy.cvmfs.main.pvc.storageClassName=cvmfs-gxy-main-$PREFIX \
     --set galaxy.service.type=LoadBalancer \
     --set rbac.enabled=false\
-    --set galaxy.image.repository=$IMAGE \
-    --set galaxy.image.tag=$TAG \
     --set galaxy.terra.launch.workspace="De novo transcriptome reconstruction with RNA-Seq"\
     --set galaxy.terra.launch.namespace="galaxy-anvil"\
     --set cvmfs.cache.preload.enabled=false\
