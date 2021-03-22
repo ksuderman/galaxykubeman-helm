@@ -8,5 +8,6 @@ dependencies:
     version: 1.4.1
     alias: cvmfs
   - name: galaxy
-    repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
-    version: 3.10.6
+    #repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
+    #repository: file:///Users/suderman/Workspaces/JHU/charts
+    version: 4.0.0-rc.1
