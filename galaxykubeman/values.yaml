@@ -108,9 +108,6 @@ galaxy:
     galaxy.yml:
       galaxy:
         job_config_file: "/galaxy/server/config/job_conf.yml"
-        logo_src: "{{ .Values.ingress.path}}/static/images/galaxy_project_logo_white_square.png"
-        logo_src_secondary: "{{ .Values.ingress.path}}/static/images/galaxy_project_logo_white_square.png"
-        logo_url: "https://anvil.terra.bio"
     job_conf.yml:
       runners:
         local:
@@ -188,7 +185,7 @@ galaxy:
         namespace: "{{ .Values.terra.launch.namespace }}"
         type: anvil
         on_anvil: True
-        writable: true
+        writable: True
         # api_url: https://firecloud-orchestration.dsde-dev.broadinstitute.org/api/
         # drs_url: https://us-central1-broad-dsde-dev.cloudfunctions.net/martha_v3
   resources:
