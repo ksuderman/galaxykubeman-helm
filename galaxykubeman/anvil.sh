@@ -8,8 +8,8 @@ GKE_ZONE=us-east1-b
 #MACHINE=n1-standard-4
 MACHINE=n1-highmem-8
 PREFIX=keith-rel-test
-IMAGE=galaxy/galaxy-anvil
-TAG=21.01-auto
+IMAGE=galaxy/galaxy-min
+TAG=21.01
 AUTO_SCALE=false
 MIN_NODES=1
 MAX_NODES=1
@@ -85,7 +85,6 @@ function namespace() {
 
     #--set galaxy.image.repository=$IMAGE \
     #--set galaxy.image.tag=$TAG \
-    #--set galaxy.image.repository=galaxy/galaxy-min
 
 function _helm() {
   local NAME="$PREFIX-galaxy"
@@ -105,8 +104,8 @@ function _helm() {
     --set galaxy.terra.launch.workspace="De novo transcriptome reconstruction with RNA-Seq"\
     --set galaxy.terra.launch.namespace="galaxy-anvil"\
     --set cvmfs.cache.preload.enabled=false\
-    --set galaxy.configs."galaxy\.yml".galaxy.single_user="suderman@jhu.edu"\
-    --set galaxy.configs."galaxy\.yml".galaxy.admin_users="suderman@jhu.edu"\
+    --set galaxy.configs."galaxy\.yml".galaxy.single_user="alex@fake.org"\
+    --set galaxy.configs."galaxy\.yml".galaxy.admin_users="alex@fake.org"\
     --set persistence.nfs.name="$PREFIX-nfs-disk"\
     --set persistence.nfs.persistentVolume.extraSpec.gcePersistentDisk.pdName="$PREFIX-nfs-pd"\
     --set persistence.nfs.size="250Gi" \
