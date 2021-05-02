@@ -1,0 +1,12 @@
+dependencies:
+- name: nfs-server-provisioner
+  repository: https://raw.githubusercontent.com/cloudve/helm-charts/anvil/
+  version: 1.1.2
+- name: galaxy-cvmfs-csi
+  repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
+  version: 1.6.0
+- name: galaxy
+  repository: https://ksuderman.github.io/helm_charts/
+  version: 99.0.0
+digest: sha256:ec772f1c8d954a6aa38b849c2ab649e1cedee7921f9edbac12046ae87859a56e
+generated: "2021-05-02T12:29:05.304538-04:00"
