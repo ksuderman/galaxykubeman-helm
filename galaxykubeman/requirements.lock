@@ -6,7 +6,7 @@ dependencies:
   repository: https://raw.githubusercontent.com/cloudve/helm-charts/master/
   version: 1.6.0
 - name: galaxy
-  repository: https://ksuderman.github.io/helm_charts/
-  version: 99.0.0
-digest: sha256:ec772f1c8d954a6aa38b849c2ab649e1cedee7921f9edbac12046ae87859a56e
-generated: "2021-05-02T12:29:05.304538-04:00"
+  repository: https://raw.githubusercontent.com/cloudve/helm-charts/anvil/
+  version: 4.0.0
+digest: sha256:886f95855a0718d29021206e1bd67c036075b5412cfd11dccca52575c285a45b
+generated: "2021-05-02T16:46:22.753767-04:00"

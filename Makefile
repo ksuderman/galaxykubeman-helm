@@ -1,5 +1,5 @@
 package:
-	if [ -e galaxykubeman/charts ] ; then rm galaxykubeman/charts ; fi
+	if [ -e galaxykubeman/charts ] ; then rm -rf galaxykubeman/charts ; fi
 	cd galaxykubeman ; helm dep up
 	ls galaxykubeman/charts
 	helm package galaxykubeman
